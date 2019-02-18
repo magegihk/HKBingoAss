@@ -13,11 +13,9 @@
 // ==/UserScript==
 
 
-
-
 $(document).ready(function() {
     var targetDom = $('#bingo-chat').closest('.panel').children('.panel-heading');
-    var trsBtn = '<span id="hkbingoAssBtn" class="btn btn-default btn-xs pull-right collapse-button">中文</span>';
+    var trsBtn = '<span id="hkbingoAssBtn" class="btn btn-default btn-xs pull-right collapse-button" data-lang="cn">显示中文</span>';
 
     var rollTranslate = {
         "Abyss Shriek": "黑吼",
@@ -155,13 +153,41 @@ $(document).ready(function() {
     };
     targetDom.append(trsBtn);
 
-    $('#hkbingoAssBtn').click(function() {
+    function initLang() {
         $(".text-container").each(function() {
-            if (rollTranslate[$(this).html()]) {
-                $(this).html(rollTranslate[$(this).html()])
+            var enStr = $(this).html();
+            // console.log(enStr)
+            $(this).attr('data-lang-en', enStr)
+            if (rollTranslate[enStr]) {
+                $(this).attr('data-lang-cn', rollTranslate[enStr])
+            }else{
+                $(this).attr('data-lang-cn', enStr)
             }
         });
+        $('#hkbingoAssBtn').attr('data-inited',true)
+        doTrans($('#hkbingoAssBtn').attr('data-lang'))
+    }
+
+    function doTrans(lang){
+      console.log(lang)
+        var targetLang = lang;
+        var arlang = targetLang=='cn'?'en':'cn'
+        $('#hkbingoAssBtn').html(targetLang=='cn'?'显示英文':'显示中文')
+        $(".text-container").each(function() {
+            $(this).html($(this).attr('data-lang-'+targetLang))
+        });
+        $('#hkbingoAssBtn').attr('data-lang',arlang)
+    }
+
+    $('#hkbingoAssBtn').click(function() {
+      console.log($(this).attr('data-inited'),$(this).attr('data-inited')!='true')
+        if($(this).attr('data-inited')!='true'){
+          initLang()
+        }else{
+          doTrans($(this).attr('data-lang'))
+        }
     })
+
 
 
 })
