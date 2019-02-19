@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              空洞骑士BINGO助手
 // @namespace         https://github.com/Magaius/HKBingoAss.git
-// @version           0.0.3
+// @version           0.0.5
 // @icon              https://greasyfork.org/system/screenshots/screenshots/000/014/163/thumb/images.png
 // @description       2019-02-18 一键翻译脚本
 // @author            elderFish
@@ -189,6 +189,7 @@ $(document).ready(function() {
         }
     })
 
-
-
+    $('#generate-new-card').click(function(){
+      $('#hkbingoAssBtn').attr('data-inited','false').attr('data-lang','cn').html('显示中文')
+    });
 })
