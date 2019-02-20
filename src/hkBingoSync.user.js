@@ -192,5 +192,4 @@ $(document).ready(function() {
     $('#generate-new-card').click(function(){
       $('#hkbingoAssBtn').attr('data-inited','false').attr('data-lang','cn').html('显示中文')
     });
-    
 })
