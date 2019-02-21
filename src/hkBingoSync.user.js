@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name              空洞骑士BINGO助手
 // @namespace         https://github.com/Magaius/HKBingoAss.git
-// @version           0.0.6
+// @version           0.0.7
 // @icon              https://greasyfork.org/system/screenshots/screenshots/000/014/163/thumb/images.png
-// @description       2019-02-18 一键翻译脚本
+// @description       2019-02-20 一键翻译脚本
 // @author            elderFish
 // @supportURL        https://github.com/Magaius/HKBingoAss/issues
 // @match             *://www.bingosync.com/room/*
@@ -96,6 +96,7 @@ $(document).ready(function () {
     "Obtain fountain vessel fragment": "喷泉碎片",
     "Parry Revek 3 times without dying (Glade of Hope Guard)": "墓地保安拼刀3次不死",
     "Pay for 6 tolls": "6个收费机",
+    "Pick up the Love Key": "拿起爱之匙",
     "Quick Slash": "快劈",
     "Rescue Bretta + Sly": "救迷妹和斯莱",
     "Save 15 grubs": "救15虫",
