@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              空洞骑士BINGO助手3.0
 // @namespace         https://github.com/magegihk/HKBingoAss.git
-// @version           3.0.1
+// @version           3.0.3
 // @icon              https://greasyfork.org/system/screenshots/screenshots/000/014/163/thumb/images.png
 // @description       2020-06-02 一键翻译脚本
 // @author            MageGi forked from elderFish
