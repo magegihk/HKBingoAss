@@ -74,7 +74,7 @@ $(document).ready(function () {
         "Ride the stag to King's Station":"坐虫去国王驿站",
         "Ride the stag to Queen's Station":"坐虫去王后驿站",
         "Have 5 or more Charms":"5+护符",
-        "Equip 5 Charms at the same time":装备5护符
+        "Equip 5 Charms at the same time":"装备5护符",
         "Obtain Carefree Melody":"无忧旋律",
         "Obtain Wayward Compass or Gathering Swarm":"指南针或蜂群",
         "Obtain Dream Wielder or Dreamshield":"舞梦者或梦盾",
