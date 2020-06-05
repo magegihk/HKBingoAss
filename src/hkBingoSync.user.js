@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              空洞骑士BINGO助手3.0
 // @namespace         https://github.com/magegihk/HKBingoAss.git
-// @version           3.0.7
+// @version           3.0.8
 // @icon              https://greasyfork.org/system/screenshots/screenshots/000/014/163/thumb/images.png
 // @description       2020-06-02 一键翻译脚本
 // @author            MageGi forked from elderFish
@@ -50,7 +50,7 @@ $(document).ready(function () {
         "Markoth":"马科斯",
         "No Eyes":"无眼",
         "Xero":"泽若",
-        "Kill 2 Soul Warriors":"2灵魂战士",
+        "Kill two Soul Warriors":"2灵魂战士",
         "Kill an Aluba":"1蜻蜓",
         "Kill two different Alubas":"2蜻蜓",
         "Colosseum 1":"竞技场1",
@@ -252,7 +252,7 @@ $(document).ready(function () {
         "Markoth":"马科斯",
         "No Eyes":"无眼",
         "Xero":"泽若",
-        "Kill 2 Soul Warriors":"杀2个灵魂战士",
+        "Kill two Soul Warriors":"杀2个灵魂战士",
         "Kill an Aluba":"杀1只阿鲁巴",
         "Kill two different Alubas":"杀2只不同的阿鲁巴",
         "Colosseum 1":"愚人竞技场1",
